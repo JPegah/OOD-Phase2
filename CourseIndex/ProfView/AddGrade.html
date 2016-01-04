@@ -2,6 +2,13 @@
 <html>
 <head lang="en">
     <link rel="stylesheet" href="../../css/style.css">
+     <link rel="stylesheet" href="../../css/bootstrap.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="makeusabrew-bootbox-cb75620/bootbox.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -54,8 +61,8 @@
 
 
       </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+    </div>
+  </div>
 </nav>
 <div class="main">
 <div class="leftBar col-md-2">
@@ -78,13 +85,13 @@
         <tr><td>
             آزمون ها
         </td></tr>
-        <tr><td>
+        <tr class="active"><td>
             نمرات
         </td></tr>
         <tr><td>
             برنامه تمرین ها
         </td></tr>
-        <tr class="active"><td>
+        <tr><td>
             برنامه درس
         </td></tr>
         <tr><td>
@@ -98,24 +105,27 @@
 </div>
 </div>
 <div class="rightBar col-md-7 col-md-offset">
-<div class="courseInd">
-<ul dir="rtl">
-    <li>
-        مقدمه
-    </li>
-    <ul>
-        <li>
-            متدولوژی یو پی
-        </li>
-        <li>
-            متدولوژی چابک
-        </li>
-    </ul>
-    <li>
-آشنایی با انوع متدولوژی ها
-    </li>
-</ul>
+    <div class="courseList">
+        <div class="gradeBox">
+    <div class="title">
+        نمرات تمرینها
+    </div>
+        <div class="linkGrade"><a href="EditGrades.html">
+            تمرین اول
+        </a></div>
+        <div><a class="linkGrade" href="EditGrades.html">
+            تمرین اول
+        </a></div>
 </div>
+        <div class="RtoL middle">
+            <button class="btn">
+            افزودن نمره
+        </button>
+             <input class="input-form">
+        نمره:
+
+
+</div></div>
 
 </div>
 </body>

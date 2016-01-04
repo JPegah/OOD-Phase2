@@ -2,10 +2,20 @@
     /*background-color: red;*/
 
 }
+.commentList{
+    background-color: #f5f5f5;
+    margin: 20px;
+    text-align: right;
+}
+
+.commentBox{
+
+}
 body{
     /*direction: rtl;*/
 }
-.main{
+.gradeInput{
+    width: 35px;
 }
 .inline{
     display: inline;

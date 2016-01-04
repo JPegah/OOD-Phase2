@@ -7,6 +7,18 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <meta charset="UTF-8">
     <title>نمرات</title>
+    <script>
+        function deleteDesc(ListItemId, parentId){
+            x = document.getElementById(ListItemId);
+            parent = document.getElementById(parentId);
+
+            while (x.firstChild){
+                x.removeChild(x.firstChild);
+            }
+            parent.removeChild(x);
+
+        }
+    </script>
 
 </head>
 <body>
@@ -27,10 +39,10 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a>
+        <li><a href="/OOD/Log%20In.html">
             خروح
         </a></li>
-          <li><a>
+          <li><a >
               شما در قالب دانشجو وارد سایت شده اید.
           </a></li>
 
@@ -99,25 +111,31 @@
 </div>
 <div class="rightBar col-md-7 col-md-offset">
 <div class="courseInd">
-<ul dir="rtl">
-    <li>
+<ul dir="rtl" id="0">
+    <li id="1">
         مقدمه
-<a>
+<button onclick="deleteDesc(1, 0)">
     حذف
-</a>
-    </li>
-    <ul>
-        <li>
+</button>
+
+    <ul id="2">
+        <li id="3">
             متدولوژی یو پی
-<a>
+<button onclick="deleteDesc(2, 3)">
     حذف
-</a>
+</button>
+            <button>
+                زیرموضوع
+            </button>
         </li>
         <li>
             متدولوژی چابک
-        <a>
+        <button onclick="deleteDesc()">
             حذف
-        </a>
+        </button>
+            <button>
+                زیرموضوع
+            </button>
         </li>
         <li>
             <input class="formControl">
@@ -126,11 +144,15 @@
             </button>
         </li>
     </ul>
-    <li>
+    </li>
+    <li id="5">
 آشنایی با انوع متدولوژی ها
-   <a>
+   <button onclick="">
        حذف
-   </a>
+   </button>
+        <button>
+            زیرموضوع
+        </button>
     </li>
 
     <li>

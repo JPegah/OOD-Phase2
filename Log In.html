@@ -9,6 +9,26 @@
     <title>
        ورود
     </title>
+    <script>
+        function getIn(){
+            user = document.getElementById('user').value;
+            pass = document.getElementById('pass').value;
+            console.log(user);
+            if (user == 90105978 && pass == 1234){
+                window.location = "/OOD/CourseIndex/StudentView/CourseDesc.html"
+            }else if (user == 90405050 && pass == 2345){
+
+            }else if (user == 'admin' && pass == 3456){
+
+            }
+            else{
+                box = document.getElementById('1')
+                var x = document.createElement("p")
+                x.innerHTML = "نام کاربری یا رمز عبور نادرست است";
+                box.appendChild(x);
+            }
+        }
+    </script>
 
 </head>
 <body>
@@ -48,10 +68,11 @@
 </div>
 <div class="rightBar col-md-4 col-md-offset  RTOL">
         <div class="input-group">
+            <div id="1"></div>
               <span>
                 نام کاربری
             </span>
-  <input type="text" class="form-control" placeholder="نام کاربری" aria-describedby="basic-addon1">
+  <input id="user" type="text" class="form-control" placeholder="نام کاربری" aria-describedby="basic-addon1">
 
 </div>
 
@@ -59,12 +80,12 @@
 <span>
                     گذرواژه
                 </span>
-  <input type="text" class="form-control" placeholder="گذرواژه" aria-describedby="basic-addon1">
+  <input id="pass" type="text" class="form-control" placeholder="گذرواژه" aria-describedby="basic-addon1">
 
 </div>
     <div>
 
-            <button class="btn btn-default middle"> ورود</button>
+            <button onclick="getIn()" class="btn btn-default middle"> ورود</button>
     </div>
     <div>
 
